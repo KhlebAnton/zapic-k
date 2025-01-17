@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__nav">
+                <nav class="nav">
+                    <a href="#" class="logo-img__wrapper">
+                        <img src="./img/logo.png" alt="Лого">
+                    </a>
+                    <a class="nav__links mobile-hidden" href="#">О cервисе</a>
+                    <a class="nav__links mobile-hidden" href="#">Отзывы</a>
+                    <a class="nav__links mobile-hidden" href="tel:+78003339999">8-800-333-99-99</a>
+                </nav>
+                <a class="btn primary-btn mobile-hidden" href="#">Личный кабинет</a>
+
+                <div class="menu desktop-hidden">
+                    <input type="checkbox" id="burger-checkbox" class="burger-checkbox">
+                    <label for="burger-checkbox" class="burger"></label>
+                    <div class="menu-list">
+                        
+                        
+                        <a href="#" class="menu-item">О сервисе</a>
+                        <a href="#" class="menu-item">Отзывы</a>
+                        <a class="btn primary-btn" href="#">Личный кабинет</a>
+                        <a class="menu-item" href="tel:+78003339999">8-800-333-99-99</a>
+    
+                    </div>
+                </div>
+            </div>
+
+            
+        </div>
+    </header>
+    <main class="main">
+        <section class="section section_hero">
+            <div class="hero_photo">
+                <img src="./img/phot.jfif" alt="">
+            </div>
+            <div class="hero_background"></div>
+            <div class="container">
+                <div class="hero__content">
+                    <h1>
+                        У вас есть клиенты и им нужно <br>
+                        записаться? Тогда наш <br>
+                        <span class="red-text">бесплатный</span> сервис для вас!
+                    </h1>
+                    <p class="hero__info">
+                        Записывай легко, работай с комфортом — сервис для ваших клиентов всегда под рукой.
+                    </p>
+                    <div class="hero__btn-wrapper">
+                        <a class="btn primary-btn" href="#">Подключить сервис</a>
+                        <span class="hero-btn__info">У нас уже 450 специалистов</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container">
+            <section class="section section_possibility">
+                <h2>Возможности</h2>
+                <div class="possibility-items">
+                    <div class="possibility-item">
+                        <div class="possibility-item__icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M24 42C24 38.6 21.4 36 18 36H4V6H16C20.4 6 24 9.6 24 14M24 42V14M24 42C24 38.6 26.6 36 30 36H44V31.4M24 14C24 9.6 27.6 6 32 6H44V12M32 24L36 28L44 20"
+                                    stroke="#C30030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                        <div class="possibility-item__title">
+                            Электронный журнал
+                        </div>
+                        <div class="possibility-item__info">
+                            Ведение журнала записи ваших клиентов. Персональный доступ для специалиста к своему
+                            расписанию
+                        </div>
+                    </div>
+                    <div class="possibility-item">
+                        <div class="possibility-item__icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M32 42V38C32 35.8783 31.1571 33.8434 29.6569 32.3431C28.1566 30.8429 26.1217 30 24 30H12C9.87827 30 7.84344 30.8429 6.34315 32.3431C4.84285 33.8434 4 35.8783 4 38V42M32 22L36 26L44 18M26 14C26 18.4183 22.4183 22 18 22C13.5817 22 10 18.4183 10 14C10 9.58172 13.5817 6 18 6C22.4183 6 26 9.58172 26 14Z"
+                                    stroke="#C30030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <div class="possibility-item__title">
+                            Персональная страница
+                        </div>
+                        <div class="possibility-item__info">
+                            Ваш личный сайт для бронирования и виджет в социальных сетях
+                        </div>
+                    </div>
+                    <div class="possibility-item">
+                        <div class="possibility-item__icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M42 10C42 13.3137 33.9411 16 24 16C14.0589 16 6 13.3137 6 10M42 10C42 6.68629 33.9411 4 24 4C14.0589 4 6 6.68629 6 10M42 10V16M6 10L6.00013 38C5.989 38.9618 6.67173 39.9105 7.9908 40.7659C9.30986 41.6214 11.2266 42.3586 13.5794 42.9155C15.9322 43.4723 18.6522 43.8324 21.51 43.9655C24.3678 44.0985 27.2796 44.0006 30.0001 43.68M42 24L36 34H44L38 44M6 24C6.00289 24.9351 6.66137 25.857 7.92291 26.6921C9.18445 27.5273 11.0141 28.2526 13.2659 28.8102C15.5177 29.3678 18.1294 29.7423 20.8924 29.9037C23.6555 30.0652 26.4935 30.0091 29.18 29.74"
+                                    stroke="#C30030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <div class="possibility-item__title">
+                            Клиентская база
+                        </div>
+                        <div class="possibility-item__info">
+                            Полная история взаимодействия с клиентом от статистики визитов до анализа предпочтений
+                        </div>
+                    </div>
+                    <div class="possibility-item">
+                        <div class="possibility-item__icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 44V8C12 6.93913 12.4214 5.92172 13.1716 5.17157C13.9217 4.42143 14.9391 4 16 4H32C33.0609 4 34.0783 4.42143 34.8284 5.17157C35.5786 5.92172 36 6.93913 36 8V44M12 44H36M12 44H8C6.93913 44 5.92172 43.5786 5.17157 42.8284C4.42143 42.0783 4 41.0609 4 40V28C4 26.9391 4.42143 25.9217 5.17157 25.1716C5.92172 24.4214 6.93913 24 8 24H12M36 44H40C41.0609 44 42.0783 43.5786 42.8284 42.8284C43.5786 42.0783 44 41.0609 44 40V22C44 20.9391 43.5786 19.9217 42.8284 19.1716C42.0783 18.4214 41.0609 18 40 18H36M20 12H28M20 20H28M20 28H28M20 36H28"
+                                    stroke="#C30030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <div class="possibility-item__title">
+                            Филиалы
+                        </div>
+                        <div class="possibility-item__info">
+                            Управление каждым филиалом в отдельности и общий контроль сети в одной системе
+                        </div>
+                    </div>
+                    <div class="possibility-item">
+                        <div class="possibility-item__icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16 12H32M32 28V36M32 20H32.02M24 20H24.02M16 20H16.02M24 28H24.02M16 28H16.02M24 36H24.02M16 36H16.02M12 4H36C38.2091 4 40 5.79086 40 8V40C40 42.2091 38.2091 44 36 44H12C9.79086 44 8 42.2091 8 40V8C8 5.79086 9.79086 4 12 4Z"
+                                    stroke="#C30030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <div class="possibility-item__title">
+                            Расчёт зарплаты
+                        </div>
+                        <div class="possibility-item__info">
+                            Быстрый расчёт заработной платы сотрудников на основе выполненных услуг
+                        </div>
+                    </div>
+                    <div class="possibility-item">
+                        <div class="possibility-item__icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M38.8 29.8C40.4 32.8 42 34 42 34H6C6 34 12 30 12 16C12 9.4 17.4 4 24 4C25.4 4 26.6 4.2 27.8 4.6M20.6001 42C20.9349 42.6089 21.427 43.1167 22.0251 43.4704C22.6232 43.8241 23.3053 44.0107 24.0001 44.0107C24.6949 44.0107 25.377 43.8241 25.9751 43.4704C26.5732 43.1167 27.0653 42.6089 27.4001 42M42 16C42 19.3137 39.3137 22 36 22C32.6863 22 30 19.3137 30 16C30 12.6863 32.6863 10 36 10C39.3137 10 42 12.6863 42 16Z"
+                                    stroke="#C30030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <div class="possibility-item__title">
+                            Оповещение
+                        </div>
+                        <div class="possibility-item__info">
+                            Информирование клиентов через мессенджеры (WhatsApp, Viber, Telegram)
+                        </div>
+                    </div>
+                    <div class="possibility-item">
+                        <div class="possibility-item__icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M18 20L22 24L30 16M24 34V42M16 42H32M8 6H40C42.2091 6 44 7.79086 44 10V30C44 32.2091 42.2091 34 40 34H8C5.79086 34 4 32.2091 4 30V10C4 7.79086 5.79086 6 8 6Z"
+                                    stroke="#C30030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <div class="possibility-item__title">
+                            Касса
+                        </div>
+                        <div class="possibility-item__info">
+                            Интеграция с большинством касс, в том числе с онлайн-кассой
+                        </div>
+                    </div>
+                    <div class="possibility-item">
+                        <div class="possibility-item__icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M42 15V12C42 10.9391 41.5786 9.92172 40.8284 9.17157C40.0783 8.42143 39.0609 8 38 8H10C8.93913 8 7.92172 8.42143 7.17157 9.17157C6.42143 9.92172 6 10.9391 6 12V40C6 41.0609 6.42143 42.0783 7.17157 42.8284C7.92172 43.5786 8.93913 44 10 44H17M32 4V12M16 4V12M6 20H16M35 35L32 32.5V28M44 32C44 35.1826 42.7357 38.2348 40.4853 40.4853C38.2348 42.7357 35.1826 44 32 44C28.8174 44 25.7652 42.7357 23.5147 40.4853C21.2643 38.2348 20 35.1826 20 32C20 28.8174 21.2643 25.7652 23.5147 23.5147C25.7652 21.2643 28.8174 20 32 20C35.1826 20 38.2348 21.2643 40.4853 23.5147C42.7357 25.7652 44 28.8174 44 32Z"
+                                    stroke="#C30030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <div class="possibility-item__title">
+                            Предоплата
+                        </div>
+                        <div class="possibility-item__info">
+                            Получение предоплаты от клиента через платежные сервисы (Ю-касса, Робокасса, Сбербанк и пр.)
+                        </div>
+                    </div>
+                    <div class="possibility-item">
+                        <div class="possibility-item__icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M34 28H34.02M14 14H38C39.0609 14 40.0783 14.4214 40.8284 15.1716C41.5786 15.9217 42 16.9391 42 18V38C42 39.0609 41.5786 40.0783 40.8284 40.8284C40.0783 41.5786 39.0609 42 38 42H10C8.93913 42 7.92172 41.5786 7.17157 40.8284C6.42143 40.0783 6 39.0609 6 38V10C6 8.93913 6.42143 7.92172 7.17157 7.17157C7.92172 6.42143 8.93913 6 10 6H38"
+                                    stroke="#C30030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <div class="possibility-item__title">
+                            Учёт финансов
+                        </div>
+                        <div class="possibility-item__info">
+                            Контроль доходов и расходов с возможностью детализации по отдельным статьям
+                        </div>
+                    </div>
+                    <div class="possibility-item">
+                        <div class="possibility-item__icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M12 36H36M12 28H36M44 16.6998V39.9998C44 41.0607 43.5786 42.0781 42.8284 42.8282C42.0783 43.5784 41.0609 43.9998 40 43.9998H8C6.93913 43.9998 5.92172 43.5784 5.17157 42.8282C4.42143 42.0781 4 41.0607 4 39.9998V16.6998C4.00322 15.9021 4.24488 15.1236 4.69392 14.4642C5.14297 13.8049 5.7789 13.2949 6.52 12.9998L22.52 6.59979C23.4704 6.22129 24.5296 6.22129 25.48 6.59979L41.48 12.9998C42.2211 13.2949 42.857 13.8049 43.3061 14.4642C43.7551 15.1236 43.9968 15.9021 44 16.6998ZM12 20H36V44H12V20Z"
+                                    stroke="#C30030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <div class="possibility-item__title">
+                            Склад
+                        </div>
+                        <div class="possibility-item__info">
+                            Оперативный и удобный учёт всех товаров и материалов. Дерево категорий
+                        </div>
+                    </div>
+                    <div class="possibility-item">
+                        <div class="possibility-item__icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M40 20C40 11.2 32.8 4 24 4C15.2 4 8 11.2 8 20C8 28.8 15.2 36 24 36H40M40 36L32 28M40 36L32 44"
+                                    stroke="#C30030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <div class="possibility-item__title">
+                            Интеграция
+                        </div>
+                        <div class="possibility-item__info">
+                            Взаимодействие с популярными сервисами и системами: CRM, интернет-эквайринг, IP-телефония
+                        </div>
+                    </div>
+                    <div class="possibility-item">
+                        <div class="possibility-item__icon">
+                            <svg width="48" height="48" viewBox="0 0 48 48" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16 24H32M24 16V32M44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24Z"
+                                    stroke="#C30030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+
+                        </div>
+                        <div class="possibility-item__title">
+                            Индивидуальное решение для вас
+                        </div>
+                        <div class="possibility-item__info">
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="section section_whom">
+            <div class="container">
+                <h2>Кому это подходит</h2>
+                <div class="whom-items">
+                    <div class="whom-item">
+                        <div class="whom-item__img-wrapper">
+                            <img src="./img/whom_icons/1.png" class="whom-item__img" alt="Нотариусы">
+                        </div>
+                        <div class="whom-item__title">
+                            Нотариусы
+                        </div>
+                    </div>
+                    <div class="whom-item">
+                        <div class="whom-item__img-wrapper">
+                            <img src="./img/whom_icons/2.png" class="whom-item__img" alt="Парикмахеры">
+                        </div>
+                        <div class="whom-item__title">
+                            Парикмахеры
+                        </div>
+                    </div>
+                    <div class="whom-item">
+                        <div class="whom-item__img-wrapper">
+                            <img src="./img/whom_icons/3.png" class="whom-item__img" alt="Массажисты">
+                        </div>
+                        <div class="whom-item__title">
+                            Массажисты
+                        </div>
+                    </div>
+                    <div class="whom-item">
+                        <div class="whom-item__img-wrapper">
+                            <img src="./img/whom_icons/4.png" class="whom-item__img" alt="Шиномонтажники">
+                        </div>
+                        <div class="whom-item__title">
+                            Шиномонтажники
+                        </div>
+                    </div>
+                    <div class="whom-item">
+                        <div class="whom-item__img-wrapper">
+                            <img src="./img/whom_icons/5.png" class="whom-item__img" alt="Маникюр">
+                        </div>
+                        <div class="whom-item__title">
+                            Маникюр
+                        </div>
+                    </div>
+                    <div class="whom-item">
+                        <div class="whom-item__img-wrapper">
+                            <img src="./img/whom_icons/6.png" class="whom-item__img" alt="Клиники">
+                        </div>
+                        <div class="whom-item__title">
+                            Клиники
+                        </div>
+                    </div>
+                    <div class="whom-item">
+                        <div class="whom-item__img-wrapper">
+                            <img src="./img/whom_icons/7.png" class="whom-item__img" alt="Шугаринг">
+                        </div>
+                        <div class="whom-item__title">
+                            Шугаринг
+                        </div>
+                    </div>
+                    <div class="whom-item">
+                        <div class="whom-item__img-wrapper">
+                            <img src="./img/whom_icons/8.png" class="whom-item__img" alt="Ремонты">
+                        </div>
+                        <div class="whom-item__title">
+                            Ремонты
+                        </div>
+                    </div>
+                    <div class="whom-item">
+                        <div class="whom-item__img-wrapper">
+                            <img src="./img/whom_icons/9.png" class="whom-item__img" alt="Депиляция">
+                        </div>
+                        <div class="whom-item__title">
+                            Депиляция
+                        </div>
+                    </div>
+                    <div class="whom-item">
+                        <div class="whom-item__img-wrapper">
+                            <img src="./img/whom_icons/10.png" class="whom-item__img" alt="Психологи">
+                        </div>
+                        <div class="whom-item__title">
+                            Психологи
+                        </div>
+                    </div>
+                    <div class="whom-item">
+                        <div class="whom-item__img-wrapper">
+                            <img src="./img/whom_icons/11.png" class="whom-item__img" alt="Врачи">
+                        </div>
+                        <div class="whom-item__title">
+                            Врачи
+                        </div>
+                    </div>
+                    <div class="whom-item">
+                        <div class="whom-item__img-wrapper">
+                            <img src="./img/whom_icons/12.png" class="whom-item__img" alt="Косметологи">
+                        </div>
+                        <div class="whom-item__title">
+                            Косметологи
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="section section_reg">
+            <div class="container">
+                <div class="section_reg-content">
+                    <p class="reg__text">
+                        И не только. Сервис отлично справляется с задачами любой компании в сфере услуг, где требуется
+                        запись клиентов.
+                        Гибкие возможности подходят для бизнеса любого размера, от самозанятого лица до крупной
+                        филиальной сети.
+                    </p>
+                    <a class="btn primary-btn" href="#">Регистрация</a>
+                </div>
+
+            </div>
+        </section>
+        <section class="section section_review">
+            <div class="container">
+                <div class="carousel">
+                    <div class="reviews-container">
+                        <div class="review">
+                            <div class="review-header">
+                                <div class="avatar">
+                                    <img class="user-feed__img" src="./img/user1.jfif" alt="Клиент">
+                                </div>
+                                <div class="user-info">
+                                    <p class="user-feed__name">Ирина Мартьянова</p>
+                                    <p class="user-feed__desc">Руководитель, отдел ценовой и ассортиментной политики</p>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p> Мы используем сервис, чтобы на постоянной основе отслеживать цены на товары из нашей
+                                    тематики в офлайн-магазинах и косметических сетях. Это помогает принимать решения на
+                                    основе данных и своевременно корректировать маркетинговую стратегию.</p>
+                            </div>
+                            <div class="review-footer">
+                                <div class="stars">
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                </div>
+                                <div class="rating">5.0</div>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="review-header">
+                                <div class="avatar">
+                                    <img class="user-feed__img" src="./img/user2.jfif" alt="Клиент">
+                                </div>
+                                <div class="user-info">
+                                    <p class="user-feed__name">Валерий Колесников</p>
+                                    <p class="user-feed__desc">Руководитель, отдел ценовой и ассортиментной политики</p>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p> Мы используем сервис, чтобы на постоянной основе отслеживать цены на товары из нашей
+                                    тематики в офлайн-магазинах и косметических сетях. Это помогает принимать решения на
+                                    основе данных и своевременно корректировать маркетинговую стратегию.</p>
+                            </div>
+                            <div class="review-footer">
+                                <div class="stars">
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star_null"></span>
+                                </div>
+                                <div class="rating">4.0</div>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="review-header">
+                                <div class="avatar">
+                                    <img class="user-feed__img" src="./img/user3.jfif" alt="Клиент">
+                                </div>
+                                <div class="user-info">
+                                    <p class="user-feed__name">Елена Будко</p>
+                                    <p class="user-feed__desc">Руководитель, отдел ценовой и ассортиментной политики</p>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p> Мы используем сервис, чтобы на постоянной основе отслеживать цены на товары из нашей
+                                    тематики в офлайн-магазинах и косметических сетях. Это помогает принимать решения на
+                                    основе данных и своевременно корректировать маркетинговую стратегию.</p>
+                            </div>
+                            <div class="review-footer">
+                                <div class="stars">
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                </div>
+                                <div class="rating">5.0</div>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="review-header">
+                                <div class="avatar">
+                                    <img class="user-feed__img" src="./img/user3.jfif" alt="Клиент">
+                                </div>
+                                <div class="user-info">
+                                    <p class="user-feed__name">тест1</p>
+                                    <p class="user-feed__desc">Руководитель, отдел ценовой и ассортиментной политики</p>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p> Мы используем сервис, чтобы на постоянной основе отслеживать цены на товары из нашей
+                                    тематики в офлайн-магазинах и косметических сетях. Это помогает принимать решения на
+                                    основе данных и своевременно корректировать маркетинговую стратегию.Мы используем сервис, чтобы на постоянной основе отслеживать цены на товары из нашей
+                                    тематики в офлайн-магазинах и косметических сетях.</p>
+                            </div>
+                            <div class="review-footer">
+                                <div class="stars">
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                </div>
+                                <div class="rating">5.0</div>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <div class="review-header">
+                                <div class="avatar">
+                                    <img class="user-feed__img" src="./img/user3.jfif" alt="Клиент">
+                                </div>
+                                <div class="user-info">
+                                    <p class="user-feed__name">тест2</p>
+                                    <p class="user-feed__desc">Руководитель, отдел ценовой и ассортиментной политики</p>
+                                </div>
+                            </div>
+                            <div class="review-content">
+                                <p> Мы используем сервис, чтобы на постоянной </p>
+                            </div>
+                            <div class="review-footer">
+                                <div class="stars">
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                    <span class="star"></span>
+                                </div>
+                                <div class="rating">5.0</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-controls">
+                        <button class="nav-button prev">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" fill="currentColor" />
+                            </svg>
+                        </button>
+                        <button class="nav-button next">
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" fill="currentColor" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a class="footer-link" href="mailto:info@example.com">
+                    <div class="footer-link__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 7L13.03 12.7C12.7213 12.8934 12.3643 12.996 12 12.996C11.6357 12.996 11.2787 12.8934 10.97 12.7L2 7M4 4H20C21.1046 4 22 4.89543 22 6V18C22 19.1046 21.1046 20 20 20H4C2.89543 20 2 19.1046 2 18V6C2 4.89543 2.89543 4 4 4Z" stroke="#C30030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </div>
+                    <div class="footer-link__title">
+                        info@example.com
+                    </div>
+                </a>
+                <a class="footer-link" href="tel:+78003339999">
+                    <div class="footer-link__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 16.9201V19.9201C22.0011 20.1986 21.9441 20.4743 21.8325 20.7294C21.7209 20.9846 21.5573 21.2137 21.3521 21.402C21.1468 21.5902 20.9046 21.7336 20.6407 21.8228C20.3769 21.912 20.0974 21.9452 19.82 21.9201C16.7428 21.5857 13.787 20.5342 11.19 18.8501C8.77382 17.3148 6.72533 15.2663 5.18999 12.8501C3.49997 10.2413 2.44824 7.27109 2.11999 4.1801C2.095 3.90356 2.12787 3.62486 2.21649 3.36172C2.30512 3.09859 2.44756 2.85679 2.63476 2.65172C2.82196 2.44665 3.0498 2.28281 3.30379 2.17062C3.55777 2.05843 3.83233 2.00036 4.10999 2.0001H7.10999C7.5953 1.99532 8.06579 2.16718 8.43376 2.48363C8.80173 2.80008 9.04207 3.23954 9.10999 3.7201C9.23662 4.68016 9.47144 5.62282 9.80999 6.5301C9.94454 6.88802 9.97366 7.27701 9.8939 7.65098C9.81415 8.02494 9.62886 8.36821 9.35999 8.6401L8.08999 9.9101C9.51355 12.4136 11.5864 14.4865 14.09 15.9101L15.36 14.6401C15.6319 14.3712 15.9751 14.1859 16.3491 14.1062C16.7231 14.0264 17.1121 14.0556 17.47 14.1901C18.3773 14.5286 19.3199 14.7635 20.28 14.8901C20.7658 14.9586 21.2094 15.2033 21.5265 15.5776C21.8437 15.9519 22.0122 16.4297 22 16.9201Z" stroke="#C30030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </div>
+                    <div class="footer-link__title">
+                        8-800-333-99-99
+                    </div>
+                </a>
+                <a class="footer-link" href="#">
+                    <div class="footer-link__icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M22 2L15 22L11 13M22 2L2 9L11 13M22 2L11 13" stroke="#C30030" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            
+                    </div>
+                    <div class="footer-link__title">
+                        @example
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="copyrigth">
+            © 2025   |   Запись-К
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
